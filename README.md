@@ -1,6 +1,11 @@
 # FieldMapper
 
-This is the implementation of FieldMapper.
+This is the implementation of FieldMapper, an automated agricultural field delineation method via vision foundation model and machinery trajectories.
+
+## Architechture
+
+![Architechture](./imgs/architecture.png)
+Three step delineation. a) Agricultural Field Candidate Generation, which generates all agricultural field candidate polygons based on remote sensing imagery via a vision foundation model; b) Trajectory-driven Agricultural Field Annotation, which leverages agricultural machinery trajectories to label agricultural fields from extracted candidate polygons; and c) PUL-based Agricultural Field Classification, which trains an agricultural field classification model to identify agricultural fields from remaining polygons via positive and unlabeled learning.
 
 ## Dataset
 
@@ -22,11 +27,6 @@ The exact longitute and latitute of box is:
 The agricultural machinery trajectory dataset with similar structure is released by Key Laboratory of Agricultural Machinery Monitoring and Big Data Application, Ministry of Agriculture and Rural Affairs, China at [Agribigdata](https://github.com/Agribigdata/public_trajectory_dataset). 
 
 The trajectories supporting the findings of this study are available upon reasonable request. 
-
-## Architechture
-
-![Architechture](./imgs/architecture.png)
-Three step delineation. a) Agricultural Field Candidate Generation, which generates all agricultural field candidate polygons based on remote sensing imagery via a vision foundation model; b) Trajectory-driven Agricultural Field Annotation, which leverages agricultural machinery trajectories to label agricultural fields from extracted candidate polygons; and c) PUL-based Agricultural Field Classification, which trains an agricultural field classification model to identify agricultural fields from remaining polygons via positive and unlabeled learning.
 
 ## Todo List
 
