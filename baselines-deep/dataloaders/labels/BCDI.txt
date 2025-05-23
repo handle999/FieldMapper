@@ -1,0 +1,8 @@
+0	building
+1	cropland
+2	forest
+3	waterbody
+4	road
+5	grassland
+6	else
+255 __background__
